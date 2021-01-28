@@ -49,32 +49,6 @@ export default  {
     const { photos, takePhoto, deletePhoto } = usePhotoGallery();
 
 
-      // const cameraFront =()=>{
-      //     Plugins.CameraPreview.start({
-      //       parent: "content",
-      //         toBack: true,
-      //         position: "front"
-      //     });
-      //     console.log("camera front");
-      // }
-      //  const cameraRear =()=>{
-      //     Plugins.CameraPreview.start({
-      //       parent: "content",
-      //         toBack: true,
-      //         position: "rear"
-      //     });
-      //     console.log("camera rear");
-      // }
-      // const cameraFlip=()=>{
-      //   Plugins.CameraPreview.flip();
-      //   console.log("flip");
-
-      // }
-      // const cameraStop=()=>{
-      //   Plugins.CameraPreview.stop();
-      //   console.log("stop");
-      // }
-
     const showActionSheet = async (photo: Photo) => {
       const actionSheet = await actionSheetController.create({
         header: 'Photos',
@@ -97,10 +71,6 @@ export default  {
     }
 
     return {
-      // cameraFront,
-      // cameraRear,
-      // cameraFlip,
-      // cameraStop,
       eye,
       happy,
       square,
